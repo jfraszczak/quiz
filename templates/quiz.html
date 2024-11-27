@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        .top-right-corner {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-right-corner">
+        Najlepszy wynik użytkownika {{ user_name }}: {{ best_score }}%
+    </div>
+
+    <h1>Quiz - Sztuczna Inteligencja</h1>
+    <form action="{{ url_for('submit') }}" method="POST">
+        {% for question in quiz_data %}
+            <div>
+                <h3>{{ question['id'] }}. {{ question['question'] }}</h3>
+                {% for option in question['options'] %}
+                    <input type="radio" name="question-{{ question['id'] }}" value="{{ option }}" required>
+                    {{ option }}<br>
+                {% endfor %}
+            </div>
+            <hr>
+        {% endfor %}
+        <input type="submit" value="Zatwierdź Odpowiedzi">
+        <input type="text" id="user_name" name="user_name" value="{{ user_name }}" style="display:None;">
+    </form>
+
+    <footer>
+        &copy; 2024 Quiz App. Jakub Frąszczak.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,48 @@
+[
+    {
+        "id": 1,
+        "question": "Który z poniższych nie jest modelem językowym?",
+        "options": ["Claude", "GPT", "Kai", "Gemini"],
+        "answer": "Kai"
+    },
+
+    {
+        "id": 2,
+        "question": "Co to jest uczenie maszynowe?",
+        "options": [
+            "Kiedy program komputerowy staje się coraz mądrzejszy, ucząc się z danych", 
+            "Kiedy komputer wykonuje skomplikowane obliczenia fizyki gier komputerowych",
+            "Kiedy komputer pobiera pocztę mailową"
+        ],
+        "answer": "Kiedy program komputerowy staje się coraz mądrzejszy, ucząc się z danych"
+    },
+
+    {
+        "id": 3,
+        "question": "Która aplikacja nie wykorzystuje systemów rekomendacyjnych uczących się naszych preferencji?",
+        "options": ["Notatnik", "YouTube", "Netlix", "Instagram"],
+        "answer": "Notatnik"
+    },
+
+    {
+        "id": 4,
+        "question": "Co znaczy, że model jest autoregresywny?",
+        "options": [
+            "Dokonuje predykcji wyjścia na podstawie poprzednich wyników", 
+            "Automatycznie dokonuje regresji", 
+            "Ignoruje dane, które uzna za nieistotne"
+        ],
+        "answer": "Dokonuje predykcji wyjścia na podstawie poprzednich wyników"
+    },
+
+    {
+        "id": 5,
+        "question": "Jaki będzie rozmiar obrazu wyjściowego, jeżeli obraz wejściowy ma rozmiar 28 x 28 pikseli i zastosujemy kernel o rozmiarze 3 x 3",
+        "options": [
+            "28 x 28", 
+            "26 x 26", 
+            "30 x 30"
+        ],
+        "answer": "26 x 26"
+    }
+]

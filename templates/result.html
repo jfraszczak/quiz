@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        .top-right-corner {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-right-corner">
+        Najlepszy wynik użytkownika {{ user_name }}: {{ best_score }}%
+    </div>
+    
+    <h1>Twój Wynik</h1>
+    <p>Odpowiedziano prawidłowo na {{ score }} z {{ total_questions }} pytań</p>
+    <a href="{{ url_for('login') }}">Rozwiąż ponownie!</a>
+    <footer>
+        &copy; 2024 Quiz App. Jakub Frąszczak.
+    </footer>
+</body>
+</html>
